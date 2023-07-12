@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Color Changer",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Save this page's URL as a shortcut file (*.url)",
+    "default_popup": "popup.html"
+  }
+}
