@@ -2,4 +2,20 @@ body {
     min-width: 200px;
     min-height: 100px;
     padding: 10px;
+
+    #color-container {
+        text-align: center;
+    }
+
+    .color-swatch {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        margin: 5px;
+        cursor: pointer;
+        width: 25px;
+        height: 15px;
+        border: 1px solid;
+    }
 }

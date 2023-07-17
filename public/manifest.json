@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Color Changer",
   "version": "1.0",
-  "permissions": ["scripting", "activeTab","storage"],
+  "permissions": ["scripting", "activeTab","storage", "tabs", "nativeMessaging"],
   "background": {
     "service_worker": "background.js",
     "type": "module"

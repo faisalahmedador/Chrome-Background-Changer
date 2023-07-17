@@ -1,8 +1,8 @@
 import {storeColor} from "./storeChormeColor";
 
-export const changeBackground = (tabs, color) => {
+export const changeBackground = (tabId, color) => {
     chrome.scripting.executeScript({
-        target: { tabId: tabs[0].id },
+        target: { tabId: tabId },
         function: changeBackgroundColor,
         args: [color]
     }).then(() => {
@@ -13,10 +13,7 @@ export const changeBackground = (tabs, color) => {
 
 }
 
-
-
 function changeBackgroundColor(backgroundColor) {
     console.log('ba', backgroundColor);
     document.body.style.backgroundColor = backgroundColor;
-    document.body.style.color = '#ffffff';
 }
