@@ -1,15 +1,14 @@
 {
-  "name": "webpack-testing",
+  "name": "color_changer",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "popup.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
-  "keywords": [],
+  "keywords": ["google-chrome-extension", "change-color-extension", "background-color-changer"],
   "author": "Faisal Ahmed",
   "license": "ISC",
-  "description": "",
+  "description": "It is a google chrome extension that can change your browser background",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
